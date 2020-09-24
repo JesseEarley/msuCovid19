@@ -1,0 +1,7 @@
+:root{
+    --msuGreen: #18453b;
+}
+
+header{
+    background: var(--msuGreen);
+}
