@@ -1,6 +1,7 @@
 :root{
     --msuGreen: #18453b;
     --footer: #333;
+    background: #333;
 }
 
 /*Bootstrap overrrides*/
@@ -24,9 +25,6 @@ legend{
 }
 
 /*HTML Elements*/
-body{
-    background: #333;
-}
 header{
     background: var(--msuGreen);
     padding: 1rem;
@@ -43,6 +41,21 @@ header{
 }
 main{
     background: #fff;
+}
+
+.icon{
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    .bg-selected,
+    .bg-selected:hover{
+        background: var(--msuGreen) !important;
+        color: #fff !important;
+    }
 }
 
 /*Footer*/
