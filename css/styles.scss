@@ -54,6 +54,13 @@ main{
     background: #fff;
 }
 
+a.noUnderline{
+    text-decoration: none;
+}
+
+a .icon{
+    color: #000;
+}
 .icon{
     cursor: pointer;
     font-size: 1.5rem;
@@ -67,6 +74,9 @@ table{
     .bg-selected:hover{
         background: var(--msuGreen) !important;
         color: #fff !important;
+        a .icon{
+            color: #fff;
+        }
     }
 }
 
