@@ -66,13 +66,13 @@
                   </nav>
                 <h1>Case Queue</h1>
                 <div class="alert alert-info" role="alert">
-                   Please select an active case to view Close Contacts. You may also edit Active Cases or Close Contacts.
+                   Please select an <strong>Active Case</strong> to view <strong>Close Contacts</strong>. You may also edit <strong>Active Cases</strong> or <strong>Close Contacts</strong>.
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 id="SwitchCasesHeading" style="display:inline-block">Active Cases</h2> <button id="SwitchCasesButton" class="btn btn-default ml-2">View inactive cases</button>
+                        <h2 id="SwitchCasesHeading" style="display:inline-block">Active Cases</h2> <button id="SwitchCasesButton" class="btn btn-default ml-2">View inactive cases</button> <a href="caseQueueAll.html" class="btn btn-default ml-2">View all cases</a>
                         <div class="table table-responsive table-striped table-hover">
-                            <table>
+                            <table id="ActiveCasesTable">
                                 <thead>
                                     <tr>
                                         <th>Case #</th>
@@ -125,7 +125,7 @@
                     <div class="col-md-6">
                         <h2>Close Contacts</h2>
                         <div id="ContactsTable" style="display:none" class="table table-responsive table-striped table-hover">
-                            <table>
+                            <table id="CloseContactsTable">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
