@@ -35,6 +35,13 @@ legend{
     }
 }
 
+.personSelectButton{
+    width: 100%;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
 /*HTML Elements*/
 header{
     background: var(--msuGreen);
@@ -74,7 +81,8 @@ table{
     .bg-selected:hover{
         background: var(--msuGreen) !important;
         color: #fff !important;
-        a .icon{
+        a .icon,
+        .btn{
             color: #fff;
         }
     }

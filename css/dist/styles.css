@@ -36,6 +36,13 @@ legend {
   color: #fff;
 }
 
+.personSelectButton {
+  width: 100%;
+}
+.personSelectButton:focus {
+  box-shadow: none;
+}
+
 /*HTML Elements*/
 header {
   background: var(--msuGreen);
@@ -80,7 +87,9 @@ table .bg-selected:hover {
   color: #fff !important;
 }
 table .bg-selected a .icon,
-table .bg-selected:hover a .icon {
+table .bg-selected .btn,
+table .bg-selected:hover a .icon,
+table .bg-selected:hover .btn {
   color: #fff;
 }
 
