@@ -96,6 +96,7 @@ table .bg-selected:hover .btn {
 /*Forms*/
 .required {
   background: #18453b;
+  border-radius: 0.25rem;
   color: #fff;
   font-size: 0.9rem;
   padding: 0.1rem 0.5rem;
