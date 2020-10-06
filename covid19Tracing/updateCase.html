@@ -61,93 +61,135 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Update Case</li>
+                      <li class="breadcrumb-item active" aria-current="page">New Case Entry</li>
                     </ol>
                   </nav>
-                <h1>Update Case: Earley, Jesse</h1>
+                <h1>Update Case (Earley, Jesse - earleyj1)</h1>
                 <form>
                     <fieldset>
+                        <legend>Metadata</legend>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="caseNumber">Case Number</label>
+                                <input type="text" class="form-control" id="caseNumber" disabled value="81">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="dateOfCreation">Date of creation</label>
+                                <input type="date" class="form-control" id="dateOfCreation">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="assignedTo">Assigned To</label>
+                                <select id="assignedTo" class="form-control">
+                                    <option disabled selected value="">Select your name</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
                         <legend>Contact Information</legend>
-                        <div class="form-group">
-                            <label for="netid">NETID</label>
-                            <input type="text" class="form-control" id="netid" placeholder="Click and type in name" value="earleyj1">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="netid">NETID</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="netid" placeholder="Click and type in name" value="Earley, Jesse - earleyj1">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="dateofBirth">Date of birth</label>
+                                <input type="date" class="form-control" id="dateofBirth" value="1981-12-08">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="azPid">APID or ZPID</label>
+                                <input type="text" class="form-control" id="azPid" value="A123456">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="personType">Person Type</label>
+                                <select id="personType" class="form-control">
+                                    <option disabled selected value="">Select one</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="otherPersonType">Other Person Type</label>
+                                <div class="input-group">
+                                    <input id="otherPersonType" type="text" class="form-control" placeholder="Input new Person Type if type not found in list...">
+                                    <div class="input-group-append">
+                                    <button class="btn btn-green" type="button">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="msuEmail">MSU Email</label>
+                                <input type="text" class="form-control" id="msuEmail">
+                            </div>   
+                            <div class="form-group col-md-6">
+                                <label for="personalEmail">Personal Email</label>
+                                <input type="text" class="form-control" id="personalEmail" value="earleyj1@msu.edu">
+                            </div>   
                         </div>
                         <div class="form-group">
-                            <label for="dateofBirth">Date of birth</label>
-                            <input type="date" class="form-control" id="dateofBirth" value="1981-12-08">
+                            <label for="currentAddress">Current Address</label> <span class="required">Required</span>
+                            <input required type="text" class="form-control" id="currentAddress" value="1234 Lansing Dr.">
+                        </div> 
+                        <div class="form-row"> 
+                            <div class="form-group col-md-3">
+                                <label for="currentCity">Current City</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="currentCity" value="Lansing">
+                            </div>  
+                            <div class="form-group col-md-3">
+                                <label for="currentState">Current State</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="currentState" value="MI">
+                            </div>  
+                            <div class="form-group col-md-3">
+                                <label for="currentZip">Current Zipcode</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="currentZip" value="48918">
+                            </div>  
+                            <div class="form-group col-md-3">
+                                <label for="currentCounty">Current County</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="currentCounty" value="Ingham">
+                            </div>  
                         </div>
-                        <div class="form-group">
-                            <label for="azPid">APID or ZPID</label>
-                            <input type="text" class="form-control" id="azPid" value="Z123456">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cellPhone">Cell Phone</label> <span class="required">Required</span>
+                                <input required type="text" class="form-control" id="cellPhone" value="517-555-5555">
+                            </div>  
+                            <div class="form-group col-md-6">
+                                <label for="homePhone">Home Phone</label>
+                                <input type="text" class="form-control" id="homePhone">
+                            </div>  
                         </div>
-                        <div class="form-group">
-                            <label for="personType">Person Type</label>
-                            <select id="personType" class="form-control">
-                                <option disabled selected value="">Select one</option>
-                            </select>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="msuWorkplace">MSU Workplace - Building(s)</label>
+                                <input type="text" class="form-control" id="msuWorkplace" value="Some Building">
+                            </div>  
+                            <div class="form-group col-md-6">
+                                <label for="msuDepartment">MSU Department</label>
+                                <input type="text" class="form-control" id="msuDepartment" value="Some Dept.">
+                            </div>  
                         </div>
-                        <div class="form-group">
-                            <label for="msuEmail">MSU Email</label>
-                            <input type="text" class="form-control" id="msuEmail" value="earleyj1@msu.edu">
-                        </div>   
-                        <div class="form-group">
-                            <label for="personalEmail">Personal Email</label>
-                            <input type="text" class="form-control" id="personalEmail" value="jesse.earley@gmail.com">
-                        </div>   
-                        <div class="form-group">
-                            <label for="currentAddress">Current Address</label>
-                            <input type="text" class="form-control" id="currentAddress">
-                        </div>  
-                        <div class="form-group">
-                            <label for="currentCity">Current City</label>
-                            <input type="text" class="form-control" id="currentCity" value="Somewhere">
-                        </div>  
-                        <div class="form-group">
-                            <label for="currentState">Current State</label>
-                            <input type="text" class="form-control" id="currentState" value="MI">
-                        </div>  
-                        <div class="form-group">
-                            <label for="currentZip">Current Zipcode</label>
-                            <input type="text" class="form-control" id="currentZip" value="48917">
-                        </div>  
-                        <div class="form-group">
-                            <label for="currentCounty">Current County</label>
-                            <input type="text" class="form-control" id="currentCounty" value="Some County">
-                        </div>  
-                        <div class="form-group">
-                            <label for="cellPhone">Cell Phone</label>
-                            <input type="number" class="form-control" id="cellPhone" value="5175557890">
-                        </div>  
-                        <div class="form-group">
-                            <label for="homePhone">Home Phone</label>
-                            <input type="text" class="form-control" id="homePhone" value="5175557890">
-                        </div>  
-                        <div class="form-group">
-                            <label for="msuWorkplace">MSU Workplace - Building(s)</label>
-                            <input type="text" class="form-control" id="msuWorkplace" value="Some Building">
-                        </div>  
-                        <div class="form-group">
-                            <label for="msuDepartment">MSU Department</label>
-                            <input type="text" class="form-control" id="msuDepartment" value="Some Dept">
-                        </div>  
                     </fieldset>
                     <fieldset>
                         <legend>Symptoms &amp; Status</legend>
-                        <div class="form-group">
-                            <label for="dateofOnset">Date of symptom onset</label>
-                            <input type="date" class="form-control" id="dateofOnset" value="2020-04-04">
-                        </div>
-                        <div class="form-group">
-                            <label for="dateofLastOnCampus">Date last on campus</label>
-                            <input type="date" class="form-control" id="dateofLastOnCampus" value="2020-03-15">
-                        </div>
-                        <div class="form-group">
-                            <label for="dateofTestCollection">Date of test collection</label>
-                            <input type="date" class="form-control" id="dateofTestCollection" value="2020-04-06">
-                        </div>
-                        <div class="form-group">
-                            <label for="dateofProjectedIsolationEnd">Projected isolation end date</label>
-                            <input type="date" class="form-control" id="dateofProjectedIsolationEnd" value="2020-04-20">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="dateofOnset">Date of symptom onset</label>
+                                <input type="date" class="form-control" id="dateofOnset" value="2020-04-04">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="dateofLastOnCampus">Date last on campus</label>
+                                <input type="date" class="form-control" id="dateofLastOnCampus" value="2020-03-15">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="dateofTestCollection">Date of test collection</label>
+                                <input type="date" class="form-control" id="dateofTestCollection" value="2020-04-06">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="dateofProjectedIsolationEnd">Projected isolation end date</label>
+                                <input type="date" class="form-control" id="dateofProjectedIsolationEnd" value="2020-04-20">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="healthStatus">Health Status</label>
@@ -164,36 +206,22 @@
                             <label class="form-check-label" for="healthDeptNotified">Health Department Notified?</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="activeCase" checked>
-                            <label class="form-check-label" for="activeCase">Active?</label>
+                            <input type="checkbox" class="form-check-input" id="contactTracingInitiated" checked>
+                            <label class="form-check-label" for="contactTracingInitiated">Active?</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="contactTracingInitiated">
-                            <label class="form-check-label" for="contactTracingInitiated">Contact Tracing Initiatied?</label>
+                            <input type="checkbox" class="form-check-input" id="activeCase">
+                            <label class="form-check-label" for="activeCase">Contact Tracing Initiatied?</label>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Metadata</legend>
-                        <div class="form-group">
-                            <label for="caseNumber">Case Number</label>
-                            <input type="text" class="form-control" id="caseNumber" disabled value="81">
-                        </div>
-                        <div class="form-group">
-                            <label for="dateOfCreation">Date of creation</label>
-                            <input type="date" class="form-control" id="dateOfCreation" value="2020-04-07">
-                        </div>
-                        <div class="form-group">
-                            <label for="assignedTo">Assigned To</label>
-                            <select id="assignedTo" class="form-control">
-                                <option disabled selected value="">Select your name</option>
-                            </select>
-                        </div>
+                        <legend>Additional Information</legend>
                         <div class="form-group">
                             <label for="comments">Comments</label>
                             <textarea class="form-control" rows="5" id="comments">He doesn't really have COVID-19. He knows because he's been tested, but for testing we will pretend that he does</textarea>
                         </div>  
                     </fieldset>
-                    <a href="index.html" class="btn btn-green">Update Case</a> <a href="index.html" class="btn btn-danger">Cancel Update</a>
+                    <a href="index.html" class="btn btn-green">Save New Case</a> <a href="index.html" class="btn btn-danger">Cancel New Case</a>
                 </form>
             </div>
         </main>
