@@ -26,6 +26,11 @@ legend {
   color: #333;
 }
 
+.container {
+  background: #fff;
+  padding-bottom: 1rem;
+}
+
 /*Buttons*/
 .btn-green {
   background: #2e574e;
@@ -60,7 +65,7 @@ header .header__appName {
 }
 
 main {
-  background: #fff;
+  background: #eee;
 }
 
 a.noUnderline {
@@ -107,7 +112,6 @@ footer {
   background: var(--footer);
   color: #fff;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 1rem;
   padding: 1rem;
 }
 footer a:hover {
