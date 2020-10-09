@@ -93,6 +93,7 @@ header .header__appName {
 
 main {
   background: #eee;
+  padding-bottom: 1rem;
   padding-top: 1rem;
 }
 
