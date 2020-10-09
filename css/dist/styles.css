@@ -31,6 +31,33 @@ legend {
   padding-bottom: 1rem;
 }
 
+.navbar {
+  display: block;
+}
+
+.navbar-toggler {
+  border: 1px solid #fff;
+  height: 35px;
+  float: right;
+  margin-bottom: 0.5rem;
+  width: 60px;
+}
+
+.icon-bar {
+  border-top: 5px solid #fff;
+  display: block;
+  padding: 2px 0;
+  width: 100%;
+}
+
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  background: #fff;
+  color: var(--msuGreen);
+}
+
 /*Buttons*/
 .btn-green {
   background: #2e574e;
@@ -51,7 +78,7 @@ legend {
 /*HTML Elements*/
 header {
   background: var(--msuGreen);
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 header .header__spartantHelmetLogo {
   height: 34px;
@@ -66,6 +93,7 @@ header .header__appName {
 
 main {
   background: #eee;
+  padding-top: 1rem;
 }
 
 a.noUnderline {
@@ -203,5 +231,11 @@ footer .footer__linksAndInfo {
 
   .footer__linksAndInfo {
     grid-row: 1;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
