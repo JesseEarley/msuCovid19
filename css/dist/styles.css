@@ -35,6 +35,12 @@ legend {
   display: block;
 }
 
+.navbar-collapse {
+  padding-bottom: 30px;
+  position: relative;
+  top: 30px;
+}
+
 .navbar-toggler {
   border: 1px solid #fff;
   height: 35px;
