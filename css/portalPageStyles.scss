@@ -1,0 +1,18 @@
+@use 'styles.scss';
+
+//Spartan Spit
+.container-portalBody,
+.container-spartanSpit{
+    margin: 1rem 0;
+}
+.progress{
+    height: auto;
+
+    .progress-bar{
+        height: 2rem;
+    }
+    .progress-bar.bg-gray{
+        background-color: #ccc;
+    }
+}
+
