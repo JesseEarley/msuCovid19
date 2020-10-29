@@ -212,6 +212,7 @@ footer .footer__info ul li:last-child {
 }
 
 /*Covid19Tracing Home*/
+/*Homepage is not being used at the moment, but will keep these styles in place*/
 .buttonContainer a.btn {
   display: block !important;
   font-size: 1.5rem;
@@ -259,11 +260,37 @@ footer .footer__linksAndInfo {
     padding-right: 1rem !important;
   }
 }
-.container-portalBody,
-.container-spartanSpit {
-  margin: 1rem 0;
+/*Card Styles for the portal landing page*/
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  /*The card grid will be 6 columns wide*/
 }
 
+.card .card-header {
+  padding: 0.5rem 1rem 0;
+}
+.card .card-header h2 {
+  font-size: 1.5rem;
+}
+
+/*2 column wide card*/
+.card-w2 {
+  grid-column: span 2;
+}
+
+/*4 column wide card*/
+.card-w4 {
+  grid-column: span 4;
+}
+
+/*6 column wide card, aka Full-width card*/
+.card-w6 {
+  grid-column: span 6;
+}
+
+/*Early Detection*/
 .progress {
   height: auto;
 }
@@ -275,31 +302,6 @@ footer .footer__linksAndInfo {
 }
 .progress .progress-bar.bg-green {
   background-color: #466a62;
-}
-
-.card-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.card .card-header {
-  padding: 0.5rem 1rem 0;
-}
-.card .card-header h2 {
-  font-size: 1.5rem;
-}
-
-.card-w2 {
-  grid-column: span 2;
-}
-
-.card-w4 {
-  grid-column: span 4;
-}
-
-.card-w6 {
-  grid-column: span 6;
 }
 
 /* Media Queries */

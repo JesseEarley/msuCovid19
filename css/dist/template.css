@@ -212,6 +212,7 @@ footer .footer__info ul li:last-child {
 }
 
 /*Covid19Tracing Home*/
+/*Homepage is not being used at the moment, but will keep these styles in place*/
 .buttonContainer a.btn {
   display: block !important;
   font-size: 1.5rem;
