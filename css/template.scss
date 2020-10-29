@@ -82,6 +82,9 @@ nav.navbar.navbar-expand-md.primaryNav{
 header{
     background: var(--msuGreen);
     padding: 1rem 1rem 0 1rem;
+    a:focus {
+        outline: 2px dashed #fff !important;
+    }
     .header__spartantHelmetLogo{
         height: 34px;
         path{
@@ -103,6 +106,11 @@ main{
     background: #eee;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    a:focus,
+    .btn:focus {
+        box-shadow: none;
+        outline: 2px dashed var(--msuGreen) !important;
+    }
 }
 
 a.noUnderline{
@@ -150,6 +158,9 @@ footer{
      a{
          &:hover{
             text-decoration: none;
+         }
+         &:focus{
+             outline: 2px dashed #fff;
          }
     }
     .footer__wordmark {
