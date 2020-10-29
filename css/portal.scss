@@ -1,10 +1,35 @@
 @use 'template.scss';
 
-//Spartan Spit
-.container-portalBody,
-.container-spartanSpit{
-    margin: 1rem 0;
+/*Card Styles for the portal landing page*/
+.card-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr); /*The card grid will be 6 columns wide*/
 }
+.card{
+    .card-header 
+    {
+        padding: .5rem 1rem 0;
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/*2 column wide card*/
+.card-w2{
+    grid-column: span 2;
+}
+/*4 column wide card*/
+.card-w4{
+    grid-column: span 4;
+}
+/*6 column wide card, aka Full-width card*/
+.card-w6{
+    grid-column: span 6;
+}
+
+/*Early Detection*/
 .progress{
     height: auto;
 
@@ -19,45 +44,15 @@
     }
 }
 
-.card-grid{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
-}
-
-.card{
-    .card-header 
-    {
-        padding: .5rem 1rem 0;
-        h2{
-            font-size: 1.5rem;
-        }
-    }
-}
-
-.card-w2{
-    grid-column: span 2;
-}
-
-.card-w4{
-    grid-column: span 4;
-}
-
-.card-w6{
-    grid-column: span 6;
-}
-
 /* Media Queries */
 @media only screen and (max-width: 991px) {
     .card-w2{
         grid-column: span 3;
     }
-
     .card-w4,
     .card-w4{
         grid-column: span 6;
     }
-    
 }
 @media only screen and (max-width: 500px) {
     .card-w2{
