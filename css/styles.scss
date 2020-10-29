@@ -32,10 +32,12 @@ legend{
 .navbar{
     display: block;
 }
+
+nav.navbar.navbar-expand-md.primaryNav{
+    height: 50px;
+}
 .navbar-collapse{
     padding-bottom: 30px;
-    position: relative;
-    top: 30px;
 }
 .navbar-toggler{
     border: 1px solid #fff;
@@ -87,9 +89,15 @@ header{
             fill: #fff;
         }
     }
+
+    .header__appPortal,
     .header__appName{
         font-size: 1.5rem;
         color: #fff;
+        a{
+            color: #fff;
+            text-decoration: underline;
+        }
     }
 }
 main{
@@ -232,6 +240,10 @@ footer{
 }
 
 @media only screen and (max-width: 767px) {
+    nav.navbar.navbar-expand-md.primaryNav{
+        height: auto;
+    }
+
     .nav-link{
         padding-left: 1rem !important;
         padding-right: 1rem !important;
