@@ -89,6 +89,9 @@ header {
   background: var(--msuGreen);
   padding: 1rem 1rem 0 1rem;
 }
+header a:focus {
+  outline: 2px dashed #fff !important;
+}
 header .header__spartantHelmetLogo {
   height: 34px;
 }
@@ -110,6 +113,11 @@ main {
   background: #eee;
   padding-bottom: 1rem;
   padding-top: 1rem;
+}
+main a:focus,
+main .btn:focus {
+  box-shadow: none;
+  outline: 2px dashed var(--msuGreen) !important;
 }
 
 a.noUnderline {
@@ -160,6 +168,9 @@ footer {
 }
 footer a:hover {
   text-decoration: none;
+}
+footer a:focus {
+  outline: 2px dashed #fff;
 }
 footer .footer__wordmark {
   grid-column-start: 1;
