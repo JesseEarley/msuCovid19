@@ -36,10 +36,12 @@ legend {
   display: block;
 }
 
+nav.navbar.navbar-expand-md.primaryNav {
+  height: 50px;
+}
+
 .navbar-collapse {
   padding-bottom: 30px;
-  position: relative;
-  top: 30px;
 }
 
 .navbar-toggler {
@@ -93,9 +95,15 @@ header .header__spartantHelmetLogo {
 header .header__spartantHelmetLogo path {
   fill: #fff;
 }
+header .header__appPortal,
 header .header__appName {
   font-size: 1.5rem;
   color: #fff;
+}
+header .header__appPortal a,
+header .header__appName a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 main {
@@ -242,6 +250,10 @@ footer .footer__linksAndInfo {
   }
 }
 @media only screen and (max-width: 767px) {
+  nav.navbar.navbar-expand-md.primaryNav {
+    height: auto;
+  }
+
   .nav-link {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
