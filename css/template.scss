@@ -1,0 +1,250 @@
+:root{
+    --msuGreen: #18453b;
+    --footer: #333;
+    background: #333;
+}
+
+/*Bootstrap overrrides*/
+fieldset{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+legend{
+    width: auto;
+}
+
+.breadcrumb{
+    background: #fff;
+    a{
+        color: var(--msuGreen);
+        text-decoration: underline;
+    }
+    .breadcrumb-item.active{
+        color: #333;
+    }
+}
+.container{
+    background: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.navbar{
+    display: block;
+}
+
+nav.navbar.navbar-expand-md.primaryNav{
+    height: 50px;
+}
+.navbar-collapse{
+    padding-bottom: 30px;
+}
+.navbar-toggler{
+    border: 1px solid #fff;
+    height: 35px;
+    float: right;
+    margin-bottom: .5rem;
+    width: 60px;
+}
+.icon-bar{
+    border-top: 5px solid #fff;
+    display: block;
+    padding: 2px 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    &:hover{
+        background: #fff;
+        color: var(--msuGreen);
+    }
+}
+
+/*Buttons*/
+.btn-green{
+    background: #2e574e;
+    color: #fff;
+    &:hover{
+        background: var(--msuGreen);
+        color: #fff;
+    }
+}
+
+.personSelectButton{
+    width: 100%;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+/*HTML Elements*/
+header{
+    background: var(--msuGreen);
+    padding: 1rem 1rem 0 1rem;
+    .header__spartantHelmetLogo{
+        height: 34px;
+        path{
+            fill: #fff;
+        }
+    }
+
+    .header__appPortal,
+    .header__appName{
+        font-size: 1.5rem;
+        color: #fff;
+        a{
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+main{
+    background: #eee;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+a.noUnderline{
+    text-decoration: none;
+}
+
+a .icon{
+    color: #000;
+}
+.icon{
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    .bg-selected,
+    .bg-selected:hover{
+        background: var(--msuGreen) !important;
+        color: #fff !important;
+        a .icon,
+        .btn{
+            color: #fff;
+        }
+    }
+}
+
+/*Forms*/
+.required{
+    background: #18453b;
+    border-radius: .25rem;
+    color: #fff;
+    font-size: .9rem;
+    padding: .1rem .5rem;
+}
+
+/*Footer*/
+footer{
+    background: var(--footer);
+    color: #fff;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+     a{
+         &:hover{
+            text-decoration: none;
+         }
+    }
+    .footer__wordmark {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .footer__iconWordmark {
+        height: 50px;
+        path{
+            fill: #fff;
+        }
+    }
+    .footer__linksAndInfo {
+        grid-column-start: 4;
+        grid-column-end: 13;
+    }
+    .footer__links{
+        border-bottom: 1px dotted;
+         a{
+            color: #fff;
+        }
+    }
+    .footer__info a{
+        color: #81d300;
+    }
+    .footer__links,
+    .footer__info {
+        font-size: 0.8rem;
+        ul{
+            margin-bottom: 0;
+            padding: 0;
+           li {
+                border-right: 1px solid #fff;
+                display: inline;
+                padding: 0 5px;
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+/*Layout*/
+.container-1170 {
+	display: grid;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/*Covid19Tracing Home*/
+.buttonContainer{
+    a.btn{
+        display: block !important;
+        font-size: 1.5rem;
+        margin: 1rem 0 1rem 0;
+        padding: 2rem !important;
+        width: 100%;
+    }
+}
+.imageContainer{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    img{
+        border-radius: 1rem;
+        width: 100%;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1170px) {
+	footer .footer__wordmark,
+	footer .footer__linksAndInfo {
+		grid-column-start: 1;
+		grid-column-end: 13;
+		text-align: center;
+	}
+	.footer__wordmark {
+		grid-row: 2;
+		margin-top: 2rem;
+	}
+
+	.footer__linksAndInfo {
+		grid-row: 1;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    nav.navbar.navbar-expand-md.primaryNav{
+        height: auto;
+    }
+
+    .nav-link{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
