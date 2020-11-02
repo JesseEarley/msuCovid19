@@ -92,13 +92,13 @@ header{
         }
     }
 
-    .header__appPortal,
+    .header__portalName,
     .header__appName{
         font-size: 1.5rem;
         color: #fff;
         a{
             color: #fff;
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
