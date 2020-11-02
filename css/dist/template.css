@@ -98,15 +98,15 @@ header .header__spartantHelmetLogo {
 header .header__spartantHelmetLogo path {
   fill: #fff;
 }
-header .header__appPortal,
+header .header__portalName,
 header .header__appName {
   font-size: 1.5rem;
   color: #fff;
 }
-header .header__appPortal a,
+header .header__portalName a,
 header .header__appName a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main {
