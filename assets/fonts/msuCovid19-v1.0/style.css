@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'msuCovid19';
   src:
-    url('fonts/msuCovid19.ttf?2pxt6n') format('truetype'),
-    url('fonts/msuCovid19.woff?2pxt6n') format('woff'),
-    url('fonts/msuCovid19.svg?2pxt6n#msuCovid19') format('svg');
+    url('fonts/msuCovid19.ttf?zad8nl') format('truetype'),
+    url('fonts/msuCovid19.woff?zad8nl') format('woff'),
+    url('fonts/msuCovid19.svg?zad8nl#msuCovid19') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -32,6 +32,12 @@
 }
 .icon-pencil:before {
   content: "\e905";
+}
+.icon-restore:before {
+  content: "\e95f";
+}
+.icon-trash:before {
+  content: "\e9ad";
 }
 .icon-warning:before {
   content: "\ea07";
