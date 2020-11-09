@@ -92,18 +92,25 @@
                     <fieldset>
                         <legend>Metadata</legend>
                         <div class="form-row">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label for="caseNumber">Case Number</label>
                                 <input type="text" class="form-control" id="caseNumber" disabled value="81">
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label for="dateOfCreation">Date of creation</label>
                                 <input type="date" class="form-control" id="dateOfCreation">
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label for="assignedTo">Assigned To</label>
                                 <select id="assignedTo" class="form-control">
                                     <option disabled selected value="">Select your name</option>
+                                </select>
+                            </div>
+                            <div class="form-group bg-danger text-white col-md-3">
+                                <label for="markForDeletion">Mark for Deletion</label>
+                                <select id="markForDeletion" class="form-control">
+                                    <option selected value="no">No</option>
+                                    <option  value="yes">Yes</option>
                                 </select>
                             </div>
                         </div>
