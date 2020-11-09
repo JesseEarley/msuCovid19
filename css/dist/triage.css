@@ -89,30 +89,35 @@ header {
   background: var(--msuGreen);
   padding: 1rem 1rem 0 1rem;
 }
+header a:focus {
+  outline: 2px dashed #fff !important;
+}
 header .header__spartantHelmetLogo {
   height: 34px;
 }
 header .header__spartantHelmetLogo path {
   fill: #fff;
 }
-header .header__spartantHelmetLogo a:focus {
-  outline: 2px dashed #fff;
-}
-header .header__appPortal,
+header .header__portalName,
 header .header__appName {
   font-size: 1.5rem;
   color: #fff;
 }
-header .header__appPortal a,
+header .header__portalName a,
 header .header__appName a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main {
   background: #eee;
   padding-bottom: 1rem;
   padding-top: 1rem;
+}
+main a:focus,
+main .btn:focus {
+  box-shadow: none;
+  outline: 2px dashed var(--msuGreen) !important;
 }
 
 a.noUnderline {
@@ -163,6 +168,9 @@ footer {
 }
 footer a:hover {
   text-decoration: none;
+}
+footer a:focus {
+  outline: 2px dashed #fff;
 }
 footer .footer__wordmark {
   grid-column-start: 1;
