@@ -271,3 +271,14 @@ footer .footer__linksAndInfo {
     padding-right: 1rem !important;
   }
 }
+.markedForDeletion {
+  background: #dc3545;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0 0.2rem;
+}
+
+button.icon {
+  border: none;
+}
