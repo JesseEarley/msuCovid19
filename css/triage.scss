@@ -1,1 +1,10 @@
 @use 'template.scss';
+
+/* Form styles */
+.form-response-no{
+    background: #d4edda;
+}
+.form-response-yes{
+    background: #f8d7da;
+    font-weight: bold;
+}
