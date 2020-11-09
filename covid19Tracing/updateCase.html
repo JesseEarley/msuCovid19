@@ -109,11 +109,11 @@
                                     <option disabled selected value="">Select your name</option>
                                 </select>
                             </div>
-                            <div class="form-group bg-danger text-white col-md-3">
+                            <div class="form-group col-md-3">
                                 <label for="markForDeletion">Mark for Deletion</label>
                                 <select id="markForDeletion" class="form-control">
                                     <option selected value="no">No</option>
-                                    <option  value="yes">Yes</option>
+                                    <option value="yes">Yes</option>
                                 </select>
                             </div>
                         </div>
@@ -317,5 +317,16 @@
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            let markForDeletion = document.querySelector('#markForDeletion');
+            markForDeletion.addEventListener('change', event => {
+                if(markForDeletion.value === "yes"){
+                    markForDeletion.parentNode.classList.add('bg-danger','text-white');
+                }
+                else{
+                    markForDeletion.parentNode.classList.remove('bg-danger','text-white');
+                }
+            });
+        </script>
     </body>
 </html>
