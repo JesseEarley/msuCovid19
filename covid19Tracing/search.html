@@ -94,63 +94,68 @@
                     <div class="col-md-12">
                         <fieldset>
                             <legend>Search Criteria</legend>
-                                <div class="form-group">
-                                    <label for="search">Search</label>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="search">Net ID</label>
                                     <input type="text" class="form-control" id="search" placeholder="Enter search criteria...">
                                 </div>
+                                <div class="form-group col-md-3">
+                                    <label for="search">First Name</label>
+                                    <input type="text" class="form-control" id="search" placeholder="Enter search criteria...">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="search">Last Name</label>
+                                    <input type="text" class="form-control" id="search" placeholder="Enter search criteria...">
+                                </div>
+                            </div>
+                            <input class="btn btn-green" type="submit" value="Search">
                         </fieldset>
                     </div>
                 </div>
-                <div class="alert alert-info">
-                    Search results will appear below.
-                </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <h2 style="display:inline-block">Active Cases</h2> <button id="SwitchCasesButton" class="btn btn-default ml-2" title="View Active & Inactive Cases">View All Cases</button>
-                        <div class="table table-responsive table-striped table-hover   ">
+                        <div class="table table-responsive table-striped table-hover">
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Case #</th>
-                                        <th>Name</th>
                                         <th>Date of Case</th>
-                                        <th>Actions</th>
+                                        <th>Case Subject</th>
+                                        <th>Edit Case</th>
+                                        <th>Close Contact</th>
                                     </th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>81</td>
-                                        <td>Earley, Jesse</td>
                                         <td>12/8/2020</td>
+                                        <td>Earley, Jesse</td>
                                         <td>
                                             <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>                                        
                                         </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Close Contacts</h2>
-                        <div class="table table-responsive table-striped table-hover">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Status</th>
-                                        <th>Actions</th>
-                                    </th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Earley, Meghan</td>
-                                        <td>Complete</td>
-                                        <td><a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Earley, Riley</td>
-                                        <td>Active</td>
-                                        <td><a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a></td>
+                                        <td>
+                                            <div class="table table-responsive table-striped table-hover"></div>
+                                                <table>
+                                                    <tr>
+                                                        <th>Contact Subject</th>
+                                                        <th>Edit Case</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Earley, Riley</td>
+                                                        <td>
+                                                            <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>                                        
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Earley, Meghan</td>
+                                                        <td>
+                                                            <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>                                        
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                             </td>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
