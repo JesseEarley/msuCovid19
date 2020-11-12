@@ -271,6 +271,13 @@ footer .footer__linksAndInfo {
     padding-right: 1rem !important;
   }
 }
+.highlight {
+  background: var(--msuGreen);
+  color: #fff;
+  margin-right: 0.1rem;
+  padding: 0.2rem;
+}
+
 .markedForDeletion {
   background: #dc3545;
   color: #fff;
