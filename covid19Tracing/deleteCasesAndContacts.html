@@ -112,7 +112,7 @@
                                         <td>Earley, Jesse<br><span class="markedForDeletion">Marked for deletion</span></td>
                                         <td>2</td>
                                         <td>                                            
-                                            <button class="icon icon-trash" aria-hidden="true" title="Delete" data-toggle="modal" data-target="#deleteCase"></button><span class="sr-only">Delete </span>
+                                            <button class="icon icon-trash" aria-hidden="true" title="Delete"></button><span class="sr-only">Delete </span>
                                             <button class="icon icon-restore" aria-hidden="true" title="Restore" data-toggle="modal" data-target="#restoreCase"></button><span class="sr-only">Restore </span>
                                         </td>
                                     </tr>
@@ -160,7 +160,7 @@
                         <div class="alert alert-danger">
                             <p>You are about to delete:</p>
                             <p>Case #: <strong>81</strong></p>
-                            <p><strong>Name: Earley, Jesse</strong></p>
+                            <p><span>Name: <span id="ContactName">Earley, Jesse</span></strong></p>
                             <p>Deleting this <strong>Case</strong> will also delete <strong>2 Close Contacts</strong></p>
                         </div>
                         <p>Are you sure you want to proceed?</p>
@@ -211,7 +211,7 @@
                     <div class="modal-body">
                         <div class="alert alert-danger">
                             You are about to delete:<br>
-                            <span>Name: Earley, Riley</span>
+                            Name: <span id="CloseContactName">Earley, Riley</Name:>
                         </div>
                         <p>Are you sure you want to proceed?</p>
                     </div>
@@ -307,5 +307,12 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="../js/script.min.js" type="text/javascript"></script>
+<script>
+    $('.icon-trash').click(function() {
+        $('#deleteCase').modal('toggle')
+        $('#deleteCase #ContactName').text('Somebody, IDK');
+    });
+</script>
+
     </body>
 </html>
