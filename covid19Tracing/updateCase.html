@@ -65,7 +65,7 @@
                             <a class="nav-link" href="newCaseEntryOption2.html">New Case</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="caseQueue.html">Case Queue</a>
+                            <a class="nav-link" href="caseQueueAll.html">Case Queue</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="stagingQueue.html">Early Detection Queue</a>
@@ -89,7 +89,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="../covid19portal/index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="caseQueue.html">Case Queue</a></li>
+                      <li class="breadcrumb-item"><a href="caseQueueAll.html">Case Queue</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Update Case</li>
                     </ol>
                   </nav>
@@ -98,7 +98,7 @@
                     <fieldset>
                         <legend>Metadata</legend>
                         <div class="form-row">
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-2">
                                 <label for="caseNumber">Case Number</label>
                                 <input type="text" class="form-control" id="caseNumber" disabled value="81">
                             </div>
@@ -112,11 +112,19 @@
                                     <option disabled selected value="">Select your name</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-2">
                                 <label for="markForDeletion">Mark for Deletion</label>
                                 <select id="markForDeletion" class="form-control">
                                     <option selected value="no">No</option>
                                     <option value="yes">Yes</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="status">Status</label>
+                                <select id="status" class="form-control">
+                                    <option selected value="default">Pending</option>
+                                    <option value="inProgress">In-progress</option>
+                                    <option value="complete">Complete</option>
                                 </select>
                             </div>
                         </div>
@@ -238,6 +246,10 @@
                             <label class="form-check-label" for="confirmedPositive">Confirmed Positive?</label>
                         </div>
                         <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="activeCase">
+                            <label class="form-check-label" for="priority">Priority?</label>
+                        </div>
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="healthDeptNotified">
                             <label class="form-check-label" for="healthDeptNotified">Health Department Notified?</label>
                         </div>
@@ -248,6 +260,42 @@
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="activeCase">
                             <label class="form-check-label" for="activeCase">Contact Tracing Initiatied?</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Registered Courses</legend>
+        
+                        <!-- In person courses -->
+                        <div class="form-row">
+                            <div class="form-group col-md-12 registered-course">
+                                <button class="noUnderline btn btn-green" type="button" data-toggle="collapse" data-target="#collapseInPerson">
+                                    <i class="fa fa-chevron-up" style="padding-right: 15px;"></i> <i class="fa fa-chevron-down" style="padding-right: 15px; display: none"></i> In Person
+                                </button>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <div class="table table-responsive table-striped table-hover collapse-table collapse show" id="collapseInPerson">
+                                    <div id="noInPerson">There are no in-person registered courses.</div>
+                                    <table id="inPerson">
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Virtual courses -->
+                        <div class="form-row">
+                            <div class="form-group col-md-12 registered-course">
+                                <button class="noUnderline btn btn-green" type="button" data-toggle="collapse" data-target="#collapseVirtual">
+                                    <i class="fa fa-chevron-up" style="padding-right: 15px;"></i> <i class="fa fa-chevron-down" style="padding-right: 15px; display: none"></i> Virtual
+                                </button>
+                            </div>
+        
+                            <div class="form-group col-md-12">
+                                <div class="table table-responsive table-striped table-hover collapse-table collapse show" id="collapseVirtual">
+                                    <div id="noVirtual">There are no virtual registered courses.</div>
+                                    <table id="virtual">
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset>

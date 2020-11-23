@@ -65,7 +65,7 @@
                             <a class="nav-link" href="newCaseEntryOption2.html">New Case</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="caseQueue.html">Case Queue</a>
+                            <a class="nav-link" href="caseQueueAll.html">Case Queue</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="stagingQueue.html">Early Detection Queue</a>
@@ -93,14 +93,10 @@
                     </ol>
                   </nav>
                 <h1>New Case</h1>
-                <form>
+                <form id="NewCaseForm">
                     <fieldset>
                         <legend>Metadata</legend>
                         <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="caseNumber">Case Number</label>
-                                <input type="text" class="form-control" id="caseNumber" disabled value="81">
-                            </div>
                             <div class="form-group col-md-4">
                                 <label for="dateOfCreation">Date of creation</label>
                                 <input type="date" class="form-control" id="dateOfCreation">
@@ -108,7 +104,17 @@
                             <div class="form-group col-md-4">
                                 <label for="assignedTo">Assigned To</label>
                                 <select id="assignedTo" class="form-control">
-                                    <option disabled selected value="">Select your name</option>
+                                    <option selected value="default">Select your name</option>
+                                    <option value="jesse">Jesse</option>
+                                    <option value="pending">Pending</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="status">Status</label>
+                                <select id="status" class="form-control">
+                                    <option selected value="default">Pending</option>
+                                    <option value="inProgress">In-progress</option>
+                                    <option value="complete">Complete</option>
                                 </select>
                             </div>
                         </div>
@@ -133,7 +139,9 @@
                             <div class="form-group col-md-6">
                                 <label for="personType">Person Type</label>
                                 <select id="personType" class="form-control">
-                                    <option disabled selected value="">Select one</option>
+                                    <option selected value="">Select one</option>
+                                    <option value="jesse">Jesse</option>
+                                    <option value="pending">Pending</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
@@ -201,26 +209,26 @@
                     </fieldset>
                     <fieldset>
                         <legend>Symptoms &amp; Status</legend>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="dateofOnset">Date of symptom onset</label>
-                                    <input type="date" class="form-control" id="dateofOnset">
-                                </div>
-                                <div class="form-group">
-                                    <label for="dateofLastOnCampus">Date last on campus</label>
-                                    <input type="date" class="form-control" id="dateofLastOnCampus">
-                                </div>
-                                <div class="form-group">
-                                    <label for="dateofTestCollection">Date of test collection</label>
-                                    <input type="date" class="form-control" id="dateofTestCollection">
-                                </div>
-                                <div class="form-group">
-                                    <label for="dateofProjectedIsolationEnd">Projected isolation end date</label>
-                                    <input type="date" class="form-control" id="dateofProjectedIsolationEnd">
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="dateofSymptomOnset">Date of Symptom Onset</label>
+                                <input type="date" class="form-control" id="dateofSymptomOnset">
                             </div>
-                            <div class="col-md-8">
+                            <div class="form-group col-md-3">
+                                <label for="dateofLastOnCampus">Date last on campus</label>
+                                <input type="date" class="form-control" id="dateofLastOnCampus">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="dateofTestCollection">Date of test collection</label>
+                                <input type="date" class="form-control" id="dateofTestCollection">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="dateofProjectedIsolationEnd">Projected isolation end date</label>
+                                <input type="date" class="form-control" id="dateofProjectedIsolationEnd">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="healthStatus">Health Status</label>
                                     <select class="form-control" id="healthStatus">
@@ -230,6 +238,10 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="confirmedPositive">
                                     <label class="form-check-label" for="confirmedPositive">Confirmed Positive?</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="activeCase">
+                                    <label class="form-check-label" for="priority">Priority?</label>
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="healthDeptNotified">
@@ -316,5 +328,25 @@
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            function editableFormElements() {
+                let formElements = document.getElementById('NewCaseForm').elements;
+                let assignedTo = document.getElementById('assignedTo');
+                if(assignedTo.value == "pending"){
+                    for(x = 0; x < formElements.length; x++){
+                        formElements[x].disabled = true;
+                    }
+                    assignedTo.disabled = false;
+                }
+                else{
+                    for(x = 0; x < formElements.length; x++){
+                        formElements[x].disabled = false;
+                    }
+                }
+            }
+
+            document.getElementById('assignedTo').addEventListener('change', editableFormElements);
+        </script>
+    
     </body>
 </html>
