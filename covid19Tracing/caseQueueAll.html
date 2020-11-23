@@ -101,7 +101,7 @@
                         <fieldset>
                             <legend>Filter</legend>
                             <div class="row">
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="assignedTo">Assigned To</label>
                                     <select id="assignedTo" class="form-control">
                                         <option selected value="">All</option>
@@ -111,16 +111,23 @@
                                         <option value="">Elizabeth King</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
+                                    <label for="caseStatus">Priority</label>
+                                    <select id="caseStatus" class="form-control">
+                                        <option selected value="">Standard</option>
+                                        <option selected value="">Prioritized</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
                                     <label for="caseStatus">Status</label>
                                     <select id="caseStatus" class="form-control">
                                         <option selected value="">All</option>
-                                        <option selected value="">Pending</option>
+                                        <option value="">Pending</option>
                                         <option value="">In-Progress</option>
                                         <option value="">Complete</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="personType">Person Type</label>
                                     <select id="personType" class="form-control">
                                         <option selected value="">All</option>
