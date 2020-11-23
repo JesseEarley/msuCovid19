@@ -98,33 +98,40 @@
                     <fieldset>
                         <legend>Metadata</legend>
                         <div class="form-row">
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-md-4">
                                 <label for="caseNumber">Case Number</label>
                                 <input type="text" class="form-control" id="caseNumber" disabled value="81">
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-4">
                                 <label for="dateOfCreation">Date of creation</label>
                                 <input type="date" class="form-control" id="dateOfCreation">
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-4">
                                 <label for="assignedTo">Assigned To</label>
                                 <select id="assignedTo" class="form-control">
                                     <option disabled selected value="">Select your name</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-2">
-                                <label for="markForDeletion">Mark for Deletion</label>
-                                <select id="markForDeletion" class="form-control">
-                                    <option selected value="no">No</option>
-                                    <option value="yes">Yes</option>
+                            <div class="form-group col-md-4">
+                                <label for="priority">Priority</label>
+                                <select id="priority" class="form-control">
+                                    <option selected value="">Standard</option>
+                                    <option selected value="">Prioritized</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-md-4">
                                 <label for="status">Status</label>
                                 <select id="status" class="form-control">
                                     <option selected value="default">Pending</option>
                                     <option value="inProgress">In-progress</option>
                                     <option value="complete">Complete</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="markForDeletion">Mark for Deletion</label>
+                                <select id="markForDeletion" class="form-control">
+                                    <option selected value="no">No</option>
+                                    <option value="yes">Yes</option>
                                 </select>
                             </div>
                         </div>
@@ -244,10 +251,6 @@
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="confirmedPositive" checked>
                             <label class="form-check-label" for="confirmedPositive">Confirmed Positive?</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="activeCase">
-                            <label class="form-check-label" for="priority">Priority?</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="healthDeptNotified">

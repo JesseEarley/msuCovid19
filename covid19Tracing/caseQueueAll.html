@@ -104,15 +104,17 @@
                                 <div class="form-group col-md-4">
                                     <label for="assignedTo">Assigned To</label>
                                     <select id="assignedTo" class="form-control">
-                                        <option selected value="">(Unassigned)</option>
-                                        <option selected value="">Becky Anderson</option>
-                                        <option selected value="">Bonnie Seaks</option>
-                                        <option selected value="">Elizabeth King</option>
+                                        <option selected value="">All</option>
+                                        <option value="">(Unassigned)</option>
+                                        <option value="">Becky Anderson</option>
+                                        <option value="">Bonnie Seaks</option>
+                                        <option value="">Elizabeth King</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="caseStatus">Case Status</label>
+                                    <label for="caseStatus">Status</label>
                                     <select id="caseStatus" class="form-control">
+                                        <option selected value="">All</option>
                                         <option selected value="">Pending</option>
                                         <option value="">In-Progress</option>
                                         <option value="">Complete</option>
@@ -121,6 +123,7 @@
                                 <div class="form-group col-md-4">
                                     <label for="personType">Person Type</label>
                                     <select id="personType" class="form-control">
+                                        <option selected value="">All</option>
                                         <option selected value="">Student</option>
                                         <option value="">Faculty</option>
                                         <option value="">Employee</option>
@@ -133,7 +136,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <h2 id="SwitchCasesHeading" style="display:inline-block">Active Cases</h2> <button id="SwitchCasesButton" class="btn btn-default ml-2">View inactive cases</button>
+                        <h2 id="SwitchCasesHeading" style="display:inline-block">Active Cases</h2> <!--button id="SwitchCasesButton" class="btn btn-default ml-2">View inactive cases</button>-->
                         <div class="table table-responsive table-striped table-hover">
                             <table id="ActiveCasesTable">
                                 <thead>
@@ -141,14 +144,20 @@
                                         <th>Case #</th>
                                         <th>Name</th>
                                         <th>Date of Case</th>
+                                        <th>Priority</th>
+                                        <th>Status</th>
+                                        <th>Person Type</th>
                                         <th>Actions</th>
                                     </th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>81</td>
-                                        <td>Earley, Jesse<br><span class="markedPriority">Priority</span></td></td>
+                                        <td>Earley, Jesse<br></td></td>
                                         <td>12/8/2020</td>
+                                        <td>Standard</td>
+                                        <td>In-Progress</td>
+                                        <td>Faculty</td>
                                         <td>
                                             <span class="icon icon-checkbox-checked" aria-hidden="true" title="Select"></span><span class="sr-only">Select </span>
                                             <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>
@@ -158,6 +167,9 @@
                                         <td>82</td>
                                         <td>Price, Joshua<br><span class="markedForDeletion">Marked for deletion</span></td>
                                         <td>1/8/2020</td>
+                                        <td>Standard</td>
+                                        <td>In-Progress</td>
+                                        <td>Faculty</td>
                                         <td>                                            
                                             <span class="icon icon-checkbox-checked" aria-hidden="true" title="Select"></span><span class="sr-only">Select </span>
                                             <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>
@@ -167,6 +179,9 @@
                                         <td>83</td>
                                         <td>Burris, Shelbie</td>
                                         <td>4/6/2020</td>
+                                        <td>Standard</td>
+                                        <td>In-Progress</td>
+                                        <td>Faculty</td>
                                         <td>                                            
                                             <span class="icon icon-checkbox-checked" aria-hidden="true" title="Select"></span><span class="sr-only">Select </span>
                                             <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>
@@ -176,6 +191,9 @@
                                         <td>84</td>
                                         <td>Hunt, Ryan</td>
                                         <td>6/8/2020</td>
+                                        <td>Standard</td>
+                                        <td>In-Progress</td>
+                                        <td>Faculty</td>
                                         <td>                                            
                                             <span class="icon icon-checkbox-checked" aria-hidden="true" title="Select"></span><span class="sr-only">Select </span>
                                             <a href="updateCase.html" class="noUnderline"><span class="icon icon-pencil" title="Edit"></span><span class="sr-only">Edit</span></a>
