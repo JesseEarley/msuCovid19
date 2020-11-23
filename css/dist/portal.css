@@ -106,7 +106,7 @@ header .header__appName {
 header .header__portalName a,
 header .header__appName a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main {
