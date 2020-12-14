@@ -280,16 +280,16 @@ main a:hover {
   font-size: 1.2rem;
 }
 
-.card {
+.card-audience {
   float: left;
   margin: 0.1rem;
   min-height: 280px;
   width: 32%;
 }
-.card .card-title {
+.card-audience .card-title {
   font-size: 1.2rem;
 }
-.card .btn-card {
+.card-audience .btn-card {
   bottom: 0;
   left: 0;
   position: absolute;
