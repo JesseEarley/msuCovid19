@@ -286,6 +286,22 @@ footer .footer__linksAndInfo {
   padding: 0 0.2rem;
 }
 
+.markedEDP {
+  background: rebeccapurple;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0 0.2rem;
+}
+
+.markedRepeatPositive {
+  background: #0b7ac2;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0 0.2rem;
+}
+
 .markedPriority {
   background: #ffc107;
   color: #212529;
