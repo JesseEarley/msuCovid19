@@ -291,19 +291,21 @@ main a:hover {
 }
 .card-audience .btn-card {
   bottom: 0;
+  font-size: 0.9rem;
   left: 0;
   position: absolute;
   right: 0;
 }
 
 /* Media Queries */
+@media only screen and (max-width: 991px) {
+  .card-audience {
+    margin: 0.1rem 0;
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .hide-mobile {
     display: none;
-  }
-
-  .card {
-    margin: 0.1rem 0;
-    width: 50%;
   }
 }
