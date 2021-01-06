@@ -43,4 +43,13 @@ main{
     .hide-mobile{
         display: none;
     }
+    .card-audience {
+        margin: .1rem 0;
+        width: 100%;
+
+        .btn-card{
+            position: relative;
+        }
+    }
+
 }
