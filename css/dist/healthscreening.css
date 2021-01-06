@@ -308,4 +308,12 @@ main a:hover {
   .hide-mobile {
     display: none;
   }
+
+  .card-audience {
+    margin: 0.1rem 0;
+    width: 100%;
+  }
+  .card-audience .btn-card {
+    position: relative;
+  }
 }
